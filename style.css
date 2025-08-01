@@ -1,0 +1,213 @@
+/* style.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00bcd4;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: linear-gradient(135deg, #3b8dda, #4b9be5);
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-subtext {
+  font-size: 1.1rem;
+  max-width: 100%;
+  margin: 0 auto 20px;
+}
+
+.hero-btn {
+  background-color: #ffffff;
+  color: #0077b6;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #e0f7fa;
+  color:black;
+  transform: scale(1.05);
+}
+
+.about-section, .projects-section, .contact-section {
+  padding: 60px 30px;
+  background-color: #fff;
+}
+
+.about-section h2, .projects-section h2, .contact-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #0077b6;
+}
+
+.about-section p {
+  max-width: 900px;
+  margin: 10px auto;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 1.4rem;
+  color: #0077b6;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #0077b6;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.project-link:hover {
+  background-color: #005f8a;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+form button:hover {
+  background-color: #005f8a;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.social-icons a {
+  font-size: 1.8rem;
+  color: #0077b6;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00bcd4;
+  transform: scale(1.2);
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+#status-message {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malkibai Mahammad Ismail | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h2>Hi, I'm Malkibai Mahammad Ismail</h2>
+      <p class="hero-subtext">Frontend Developer | Learning FullStack | CSE @ SASTRA | Passionate about clean design & powerful code.</p>
+      <button class="hero-btn" onclick="scrollToSection('projects')">View Projects</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>
+      I'm Malkibai Mahammad Ismail, a passionate Computer Science and Engineering student currently in my third year at SASTRA Deemed to be University, Thanjavur. I have a strong foundation in front-end technologies like HTML, CSS, and JavaScript, along with problem-solving skills in C++.
+    </p>
+    <p>
+      I’m currently diving deeper into Full Stack Web Development, aiming to build scalable and user-friendly web applications. I'm enthusiastic about learning new technologies, writing clean code, and contributing to impactful projects.
+    </p>
+    <p>
+      I’m actively seeking opportunities to grow as a developer and collaborate with like-minded teams in a dynamic and challenging environment.
+    </p>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <div class="project-title">Tic Tac Toe Game</div>
+        <div class="project-description">
+          A simple and fun 2-player game built with HTML, CSS, and JavaScript. Challenge a friend and test your logic!
+        </div>
+        <a class="project-link" href="https://ismail-0707.github.io/Tic-Tac-Toe-Game/" target="_blank">Play Now</a>
+      </div>
+      <div class="project-card">
+        <div class="project-title">Quiz App</div>
+        <div class="project-description">
+          A simple Quiz application  based on python,java,cpp,sql,aptitude. Check out this!!!
+        </div>
+        <a class="project-link" href="https://github.com/Ismail-0707/quiz-app" target="_blank">Repo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form id="contact-form" onsubmit="submitForm(event)">
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+    </form>
+
+    <p id="status-message"></p>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+     <div class="social-icons">
+      <a href="https://github.com/Ismail-0707" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/malkibai-mahammad-ismail/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2025 Ismail | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
